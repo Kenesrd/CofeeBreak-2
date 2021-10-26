@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CofeeBreak</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+</head>
+<body class="light">
+    <header class="main__header">
+            <div class="main__header__logo">
+                <a href="#"><img src="img/Logo.png" alt="logo"></a>
+            </div>
+
+            <!-- ==========Navigation============== -->
+            <nav class="main__header__nav">                
+                <div class="nav__mobile__logo">
+                    <a href="#">Logo</a>
+                </div>
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Меню</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <div class="nav__mobile__social">
+                    <a href="#" class="nav__social__icons">IN</a>
+                    <a href="#" class="nav__social__icons">Wh</a>
+                </div>
+                <div class="nav__mobile__contacts">
+                    <a href="tel:+77753911931">+7 (775) 391 1931</a>
+                    <a href="mailto:dinarark89@mail.ru">dinarark89@mail.ru</a>
+                </div>
+    
+                <button class="nav__btn">Заказать звонок</button>
+            </nav>  
+            
+            <!-- ================================ -->
+            
+            
+            <div class="main__header__social">
+                <a href="#" class="main__header__social__icons">
+                    <i class="fa fa-instagram"></i></a>
+                <a href="#" class="main__header__social__icons"><i class="fa fa-whatsapp"></i></a>
+            </div>          
+              <!--=============Light_dark mode============================-->
+            <div class="light__dark__mode">
+                <input type="checkbox" name="checkbox" id="checkbox" class="checkbox">
+                <label for="checkbox">
+                    <i class="fa fa-sun-o" aria-hidden="true"></i>
+                    <i class="fa fa-moon-o" aria-hidden="true"></i>
+                    <div class="ball"></div>
+                </label>
+            </div>
+            <!-- ========================================================= -->
+            <div class="main__header__contacts">
+                <a href="tel:+77753911931"><i class="fa fa-phone"></i>+7 (775) 391 1931</a>
+                <a href="mailto:dinarark89@mail.ru"><i class="fa fa-envelope"></i>dinarark89@mail.ru</a>
+            </div>
+            <button class="header__btn">Заказать звонок</button>
+            <button>Войти</button>
+    </header>
+    <main>
+        <section class="slide">
+        </section>
+    </main>
+    <footer>footer</footer>
+    <script type="text/javascript">
+        const checkbox = document.querySelector(".light__dark__mode > .checkbox");
+        const body = document.querySelector("body");
+
+        checkbox.addEventListener('change', () => {
+            if(body.classList.value === "light"){
+                body.classList.remove('light');
+                body.classList.add("dark");
+            } else {
+                body.classList.remove('dark');
+                body.classList.add("light");
+            }
+        });
+
+        
+    </script>
+</body>
+</html>

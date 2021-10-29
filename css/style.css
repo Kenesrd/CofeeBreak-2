@@ -183,6 +183,7 @@ main > .slide{
     -webkit-box-reflect: below 0 linear-gradient(transparent, #0005);
     position: relative;
 }
+/*====*/
 h1{
     position: absolute;
     top: 30%;
